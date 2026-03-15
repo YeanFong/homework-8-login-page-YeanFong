@@ -1,0 +1,22 @@
+<h1>Login</h1>
+
+{{#if error}}
+  <p class="error">{{error}}</p>
+{{/if}}
+
+<form action="/login" method="POST" class="card">
+  <label for="username">Username</label>
+  <input id="username" name="username" type="text" required />
+
+  <label for="password">Password</label>
+  <input id="password" name="password" type="password" required />
+
+  <button type="submit">Login</button>
+</form>
+
+<div class="demo">
+  <p><strong>Test credentials:</strong></p>
+  <p>Username / Password</p>  
+  <p>admin / password123</p>
+  <p>student_dev / dev_password</p>
+</div>
